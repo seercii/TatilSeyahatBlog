@@ -1,0 +1,32 @@
+﻿@using TravelTripProject.Models.Siniflar    @* Bu kod sayesinde sınıflar ismindeki klasörüme ulaşırız *@
+
+@model List<Hakkimizda>
+
+@* Model isminde bir komut oluşturdum. Bu modelimde bir liste tutacak bu listede benim
+    listelemek istediğim değerleri tutacak(yani hakkımızda sınıfındaki değerlerimi listeliyor olcam)  yani bir koleksiyon türü*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>Hakkımızda</h3>
+
+            @* MVC de listeleme işlemi için genelde foreach döngüsü kullanılır
+        foreach döngüsünün 4 parametresi vardır. değişken türü:var değişken ismi : x ing'de içinde anlamına gelen in komutu
+        ve bu değişken değerlerini nerden alıcak : Model.
+        peki modelde ne var en üstte gördüğümüz gibi hakkımızdanın listesi var.'*@
+            @foreach (var x in Model)
+            {
+                <img src="@x.FotoUrl" alt="" />
+                <p>@x.Aciklama </p>
+            }
+
+
+        </div>
+    </div>
+</div>
+
+
