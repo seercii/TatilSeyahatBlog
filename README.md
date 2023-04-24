@@ -3,3 +3,4 @@ Bu proje MVC5 ile Code First Entity yapısı kullanılarak yapmış olduğum bir
 
 Projenin Canlı halindeki Link'i : http://tatilblogum.somee.com/Default/Index/
 
+![](https://www.hizliresim.com/6frvtaz)
